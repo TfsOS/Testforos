@@ -287,7 +287,16 @@
     <button class="taskbar-button" onclick="toggleStartMenu()">Start</button>
     <div id="current-time"></div>
 </div>
+ <!-- Autoplaying Audio -->
+    <audio id="startup-sound" src="retro-audio-logo-94648.mp3" autoplay></audio>
 
+    <script>
+        // Ensure the audio starts playing on load
+        window.onload = function() {
+            var sound = document.getElementById("startup-sound");
+            sound.play();
+        };
+    </script>
 
     <!-- Start Menu -->
     <div id="startMenu">
